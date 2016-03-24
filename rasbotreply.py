@@ -47,5 +47,5 @@ try:
 	elif number == 10:
 		rasbottwitter.update_status(status=head + "#IoT #Rasbot #Twython #Python #Hashtag ## #Spam #lol", in_reply_to_status_id=id)
 
-except TwythonError as e:
-    print e
+except TwythonError as a:
+    print a
