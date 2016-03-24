@@ -3,3 +3,5 @@ Rasbot is an intelligent and completely autonomous Twitter bot, tweeting tweets 
 
 Rasbot's Twitter account: @RPi2Bot
 URL: https://www.twitter.com/rpi2bot/
+
+Rasbot is made with Twython and can do pretty cool things. Look around!
