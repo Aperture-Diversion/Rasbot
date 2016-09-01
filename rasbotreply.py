@@ -1,12 +1,17 @@
 #!/usr/bin/env python
+#   version: 1.0
+
+#  THIS IS THE OUTDATED VERSION OF THE rasbot_full.py SCRIPT. IT WILL ONLY POST ONE
+#  OF TEN RANDOM TWEETS, REGARDLESS OF THE ORIGINAL POST.
+
 import sys
 from twython import Twython, TwythonError
 import random
 
-CONSUMER_KEY = '--SECRET--'
-CONSUMER_SECRET = '--SECRET--'
-ACCESS_KEY = '--SECRET--'
-ACCESS_SECRET = '--SECRET--'
+CONSUMER_KEY = 'XXXX'
+CONSUMER_SECRET = 'XXXX'
+ACCESS_KEY = 'XXXX'
+ACCESS_SECRET = 'XXXX'
 
 rasbottwitter = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET) 
 
@@ -27,7 +32,7 @@ number = random.randrange(1, 10)
 
 try:
 	if number == 1:
-		rasbottwitter.update_status(status=head + "Thanks for writing me, but I am pretty much too dumb to know what you just said.", in_reply_to_status_id=id)
+		rasbottwitter.update_status(status=head + "Thanks for writing me, but I am pretty much too stupid to know what you just said.", in_reply_to_status_id=id)
 	elif number == 2:
 		rasbottwitter.update_status(status=head + "I don't know what you just said, but thanks.", in_reply_to_status_id=id)
 	elif number == 3:
