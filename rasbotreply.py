@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#   version: 1.0
+#   version: 1.0 
 
 #  THIS IS THE OUTDATED VERSION OF THE rasbot_full.py SCRIPT. IT WILL ONLY POST ONE
 #  OF TEN RANDOM TWEETS, REGARDLESS OF THE ORIGINAL POST.
