@@ -7,7 +7,7 @@ Rasbot is an intelligent and completely autonomous Twitter bot, tweeting tweets 
 
 Rasbot's Twitter account: @RPi2Bot
 
-URL: https://www.twitter.com/rpi2bot/
+URL: https://twitter.com/rpi2bot/
 
 
 <hr>
