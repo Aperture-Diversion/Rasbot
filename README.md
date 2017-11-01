@@ -19,9 +19,9 @@ Rasbot is made with Twython and can do pretty cool things. Twython is a Python w
 <hr>
 
 
-Twython version: 3.4.0
+Twython version: 3.6.0
 
-Python version: 2.7.12
+Python version: 2.7.13
 
 <hr>
 
