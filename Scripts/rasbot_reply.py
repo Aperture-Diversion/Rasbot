@@ -41,6 +41,10 @@ for tweet in search["statuses"]:
         if "you" in Tweet2Reply:
           emotion = 1
 
+    # IF !HUG IN TWEET, THEN YOU GET A HUG
+    if "!hug" in Tweet2Reply:
+      emotion = 2
+
     # IF SOMEONE'S ASKING HOW I AM
     if emotion == 1:
       try:
@@ -60,6 +64,14 @@ for tweet in search["statuses"]:
 
       except TwythonError as a:
         print (a)
+
+    # SOMEONE NEEDS A VIRTUAL HUG!
+    elif emotion == 2:
+      try:
+        twitter.update_status(status=head + "*hugs* =)", in_reply_to_status_id=id)
+
+      except TwythonError as b:
+        print (b)
 
     # ELSE JUST TWEET A GENERIC ANSWER
     else:
@@ -83,8 +95,8 @@ for tweet in search["statuses"]:
         ]
         twitter.update_status(status=head + replies[number], in_reply_to_status_id=id)
 
-      except TwythonError as b:
-        print (b)
+        # RETWEET BECAUSE WHY NOT
+        twitter.retweet(id=id)
 
-    # THEN RETWEET THE TWEET, BECAUSE WHY NOT
-    twitter.retweet(id=id)
+      except TwythonError as c:
+        print (c)
