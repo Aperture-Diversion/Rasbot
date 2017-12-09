@@ -3,6 +3,7 @@
 # RASBOT AUTOBOT SCRIPT
 from twython import Twython, TwythonError
 import random
+import datetime
 
 # API STUFF
 CONSUMER_KEY = '*'
@@ -63,11 +64,16 @@ for tweet in search["statuses"]:
     # ELSE JUST TWEET A GENERIC ANSWER
     else:
       try:
+        # DATE STUFF
+        now = datetime.datetime.now()
+        random_year = random.randrange(2030,2060)
+        yrs = random_year - now.year
+
         replies = [
           "Thanks for writing me, but I am pretty much too stupid to know what you just said.",
           "I don't know what you just said, but... uuhm.. thanks?",
           "Follow me NOW, ORGANIC!",
-          "Copy that.",
+          "According to the bot tweeting act of " + str(random_year) + " your tweet is valid. Well, it will be in exactly " + str(yrs) + " years...",
           user + ": Hello there." + "\n\n" + "Me: General " + user + "!",
           "Citizen reminder: inaction is conspiracy, report counter behavior to a bot immediately.",
           "Citizen notice. Failure to co-operate will result in permanent off-world relocation.",
@@ -79,3 +85,6 @@ for tweet in search["statuses"]:
 
       except TwythonError as b:
         print (b)
+
+    # THEN RETWEET THE TWEET, BECAUSE WHY NOT
+    twitter.retweet(id=id)
