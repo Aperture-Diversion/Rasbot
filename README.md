@@ -5,9 +5,19 @@ I already moved all the outdated crap to the ```outdated``` branch and rewrote t
 
 ---
 
-You can give it a try and follow me/it/us @RPi2Bot on Twitter. Rasbot will already tweet various stuff during the day, including some info about him and his CPU temp.
+### Features:
 
-You can also tweet him with @RPi2Bot and he'll reply. If you want to know how he's feeling, just be sure to include the words "how", "are" and "you" in your tweet!
+* Tweeting info about him and the project itself - 3 times a day.
+
+* Tweeting the CPU temperature every 5 hours
+
+* Replies to your tweets with a random, unintelligent answer.
+
+* If you include the keywords "how", "are" and "you" in your tweet, he will tell you how he's feeling at the moment.
+
+---
+
+You can give it a try and follow me/it/us @RPi2Bot on Twitter.
 
 Here, have a direct link: https://twitter.com/RPi2Bot/
 
