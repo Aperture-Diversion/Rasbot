@@ -29,7 +29,7 @@ for tweet in search["statuses"]:
     user = tweet['user']['screen_name']
     id = str(tweet['id'])
     head = "@" + user + " "
-    number = random.randrange(1, 10)
+    number = random.randrange(0,9)
 
     # HE GOT NO EMOTIONS
     emotion = 0
