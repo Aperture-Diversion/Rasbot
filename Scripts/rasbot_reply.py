@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # RASBOT AUTOBOT SCRIPT
 from twython import Twython, TwythonError
-import random
-import datetime
+from random import randrange
+from datetime import datetime
 
 # API STUFF
 CONSUMER_KEY = '*'
@@ -30,7 +30,7 @@ for tweet in search["statuses"]:
     user = tweet['user']['screen_name']
     id = str(tweet['id'])
     head = "@" + user + " "
-    number = random.randrange(0,9)
+    number = randrange(0,9)
 
     # HE GOT NO EMOTIONS
     emotion = 0
@@ -77,8 +77,8 @@ for tweet in search["statuses"]:
     else:
       try:
         # DATE STUFF
-        now = datetime.datetime.now()
-        random_year = random.randrange(2030,2060)
+        now = datetime.now()
+        random_year = randrange(2030,2060)
         yrs = random_year - now.year
 
         replies = [
