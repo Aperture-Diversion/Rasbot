@@ -15,6 +15,8 @@ I already moved all the outdated crap to the ```outdated``` branch and rewrote t
 
 * If you include the keywords "how", "are" and "you" in your tweet, he will tell you how he's feeling at the moment.
 
+* All tweets directed at and containing @RPi2Bot will get retweeted.
+
 ---
 
 You can give it a try and follow me/it/us @RPi2Bot on Twitter.
