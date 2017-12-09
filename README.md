@@ -29,7 +29,7 @@ Here, have a direct link: https://twitter.com/RPi2Bot/
 
 Rasbot is made with Twython which is a Python wrapper for the Twitter API, here run by a Raspberry Pi 2. In addition I'm now using Python3!
 
-Rasbot can (potentially) do pretty cool stuff, which does not mean that it's current state allows it to use it's full potential. In this case please look for another bot, Rasbot is still not much smarter than a frog.
+Rasbot can (potentially) do pretty cool stuff, which does not mean that it's current state allows it to use it's full potential. Still in active development!
 
 
 **Twython version: 3.6.0**
