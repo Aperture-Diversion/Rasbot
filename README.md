@@ -7,9 +7,9 @@ I moved all the outdated crap to the ```outdated``` branch and rewrote scripts i
 
 ### Features:
 
-* Tweeting info about him and the project itself - 3 times a day.
+* Tweeting info about him and the project itself - 4 times a day.
 
-* Tweeting the CPU temperature every 5 hours
+* Tweeting the CPU temperature every 5 hours - so at most 5 times a day.
 
 * Replies to your tweets with a random, unintelligent answer.
 
