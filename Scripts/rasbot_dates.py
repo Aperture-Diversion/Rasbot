@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # RASBOT AUTOBOT SCRIPT
 from twython import Twython
-import datetime
+from datetime import datetime
 
 # API STUFF
 CONSUMER_KEY = '*'
@@ -12,7 +12,7 @@ ACCESS_SECRET = '*'
 rasbot = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
 
 # DATE STUFF
-now = datetime.datetime.now()
+now = datetime.now()
 # CHECK IF CHRISTMAS
 if now.month == 12 and now.day == 24:
   rasbot.update_status(status='Merry Christmas everyone! I wish you happy holidays! #Christmas')
