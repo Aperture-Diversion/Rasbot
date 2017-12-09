@@ -58,7 +58,7 @@ for tweet in search["statuses"]:
         twitter.update_status(status=head + replies[number], in_reply_to_status_id=id)
 
       except TwythonError as a:
-        print a
+        print (a)
 
     # ELSE JUST TWEET A GENERIC ANSWER
     else:
@@ -78,4 +78,4 @@ for tweet in search["statuses"]:
         twitter.update_status(status=head + replies[number], in_reply_to_status_id=id)
 
       except TwythonError as b:
-        print b
+        print (b)
