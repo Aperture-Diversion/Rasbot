@@ -35,14 +35,11 @@ for tweet in search["statuses"]:
     # HE GOT NO EMOTIONS
     emotion = 0
 
-    # IF CASCADE BECAUSE SIMPLICITY AND I DIDN'T GET IT WORKING WITH "AND" PLS DON'T JUDGE ME
-    if "how" in Tweet2Reply:
-      if "are" in Tweet2Reply:
-        if "you" in Tweet2Reply:
-          emotion = 1
-
+    # IF THE TWEET CONTAINS THE HOW ARE YOU KEYWORDS
+    if "how" in Tweet2Reply and "are" in Tweet2Reply and "you" in Tweet2Reply:
+      emotion = 1
     # IF !HUG IN TWEET, THEN YOU GET A HUG
-    if "!hug" in Tweet2Reply:
+    elif "!hug" in Tweet2Reply:
       emotion = 2
 
     # IF SOMEONE'S ASKING HOW I AM
