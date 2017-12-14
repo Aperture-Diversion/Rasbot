@@ -15,13 +15,13 @@ I moved all the outdated crap to the ```outdated``` branch and rewrote scripts i
 
 * If you include the keywords "how", "are" and "you" in your tweet, he will tell you how he's feeling at the moment.
 
-* All tweets directed at and containing @RPi2Bot will get retweeted - with the exception of hugs and "how are you".
-
 * Need a hug? When writing Rasbot a message containing "!hug", you'll get a hug! :)
+
+* All tweets directed at and containing "@RPi2Bot" will get retweeted - with the exception of hugs and "how are you".
 
 ---
 
-You can give it a try and follow me/it/us @RPi2Bot on Twitter.
+You can give it a try and follow it/him/her, @RPi2Bot, on Twitter.
 
 Here, have a direct link: https://twitter.com/RPi2Bot/
 
