@@ -3,13 +3,10 @@
 # RASBOT AUTOBOT SCRIPT
 from twython import Twython
 from datetime import datetime
+from rasbot_twython import auth
 
 # API STUFF
-CONSUMER_KEY = '*'
-CONSUMER_SECRET = '*'
-ACCESS_KEY = '*'
-ACCESS_SECRET = '*'
-rasbot = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
+twitter = auth()
 
 # DATE STUFF
 now = datetime.now()

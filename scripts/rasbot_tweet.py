@@ -3,13 +3,10 @@
 # RASBOT AUTOBOT SCRIPT
 from sys import argv
 from twython import Twython
+from rasbot_twython import auth
 
 # API STUFF
-CONSUMER_KEY = '*'
-CONSUMER_SECRET = '*'
-ACCESS_KEY = '*'
-ACCESS_SECRET = '*'
-twitter = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
+twitter = auth()
 
 # CREATE A SIMPLE TWEET USING: python rasbot_retweet.py 'YOUR_TEXT'
 twitter.update_status(status=argv[1])

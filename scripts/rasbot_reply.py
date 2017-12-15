@@ -4,13 +4,10 @@
 from twython import Twython, TwythonError
 from random import randrange
 from datetime import datetime
+from rasbot_twython import auth
 
 # API STUFF
-CONSUMER_KEY = '*'
-CONSUMER_SECRET = '*'
-ACCESS_KEY = '*'
-ACCESS_SECRET = '*'
-twitter = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
+twitter = auth()
 
 # GET TIMELINE AND LAST ID ENTRY
 timeline = twitter.get_user_timeline()

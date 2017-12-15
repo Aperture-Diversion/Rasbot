@@ -3,13 +3,10 @@
 # RASBOT AUTOBOT SCRIPT
 from os import popen
 from twython import Twython
+from rasbot_twython import auth
 
 # API STUFF
-CONSUMER_KEY = '*'
-CONSUMER_SECRET = '*'
-ACCESS_KEY = '*'
-ACCESS_SECRET = '*'
-twitter = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET) 
+twitter = auth()
 
 # RANDOMLY POSTS CPU TEMPERATURE, WHY WOULD ANYONE WANT TO KNOW THIS?
 cmd = '/opt/vc/bin/vcgencmd measure_temp'
