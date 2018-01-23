@@ -13,11 +13,13 @@ cmd = '/opt/vc/bin/vcgencmd measure_temp'
 line = popen(cmd).readline().strip()
 temp = line.split('=')[1].split("'")[0]
 
-if float(temp) >= 45:
+if int(temp) >= 45:
   extra = 'pretty hot ;)'
-elif float(temp) <= 30:
+elif int(temp) <= 30:
   extra = 'really cool 8)'
+elif int(temp) <=40:
+  extra = 'fine ._.'
 else:
   extra = 'ok :/'
 
-twitter.update_status(status='In case you want to know, my current CPU temperature is about ' + temp + ' °C. I am ' + extra  + ' #IoT #RaspberryPi')
+twitter.update_status(status='In case you want to know, my current CPU temperature is about ' + float(temp) + ' °C. I am ' + extra  + ' #IoT #RaspberryPi')
