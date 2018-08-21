@@ -35,7 +35,3 @@ Rasbot can (potentially) do pretty cool stuff, which does not mean that it's cur
 **Twython version: 3.6.0**
 
 **Python version: 3.5.3**
-
----
-
-2017, Phoenix1747.
